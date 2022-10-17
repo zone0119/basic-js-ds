@@ -29,7 +29,7 @@ const { NotImplementedError } = require('../extensions/index.js');
   let pred;
   
 		  
-		do {
+		while (tekushie) {
 		  
 			  if (tekushie.znachenie == udalit) {
 				  pred.sledushie = tekushie.sledushie;
@@ -43,7 +43,7 @@ const { NotImplementedError } = require('../extensions/index.js');
 			  }
 		 
 		 
-		} while (tekushie);
+		}  
 		  
 		  
   
