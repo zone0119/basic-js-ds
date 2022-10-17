@@ -32,7 +32,7 @@ class Queue {
       this.hvost = tochka;
     } else {
       this.bashka = new ListNode (znachenie);
-      this.hvost = this.head;
+      this.hvost = this.bashka;
     }
 
 
