@@ -26,7 +26,7 @@ class Queue {
 
   enqueue(znachenie ) {
    
-    if (this.bashka !== null) {
+    if (this.bashka == null) {
       let tochka = new ListNode (znachenie);
       this.hvost.sled = tochka;
       this.hvost = tochka;
