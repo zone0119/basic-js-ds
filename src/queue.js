@@ -25,14 +25,20 @@ class Queue {
   }
 
   enqueue(znachenie ) {
+    
+   if ( !this.bashka ){
    
-    if (this.bashka == null) {
-      let tochka = new ListNode (znachenie);
-      this.hvost.sled = tochka;
-      this.hvost = tochka;
+      this.bashka =  new bashka( znachenie );
+	  
     } else {
-      this.bashka = new ListNode (znachenie);
-      this.hvost = this.bashka;
+	
+      let tekushie = this.bashka;
+	  
+      while(tekushie.sled){
+        tekushie = tekushie.sled 
+      }
+	  
+      tekushie.sled = new bashka( znachenie )
     }
 
 
